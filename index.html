@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AIISH CARE ChatBot for speech therapy and rehabilitation services at AIISH, Mysuru." />
+    <meta name="keywords" content="speech therapy, AIISH, chatbot, rehabilitation, teletherapy" />
+    <meta name="author" content="AIISH Centre for Rehabilitation Engineering" />
+    <title>AIISH CARE ChatBot</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <div id="chatbot-icon" aria-label="Open AIISH CARE ChatBot">💬</div>
+    <div id="chatbot-container" class="hidden">
+      <div id="chatbot-header">
+        <span>AIISH CARE</span>
+        <div>
+          <button id="end-chat-btn">End Chat</button>
+          <button id="clear-btn">Clear</button>
+          <button id="close-btn" aria-label="Close ChatBot">&times;</button>
+        </div>
+      </div>
+      <div id="chatbot-body">
+        <div id="chatbot-messages"></div>
+        <div id="typing-indicator" class="hidden">
+          <span class="spinner"></span> Bot is typing...
+        </div>
+      </div>
+      <div id="chatbot-input-container">
+        <input
+          type="text"
+          id="chatbot-input"
+          placeholder="Type a message..."
+          aria-label="Type your message"
+        />
+        <button id="send-btn" aria-label="Send Message">Send</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
